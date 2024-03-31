@@ -1,0 +1,18 @@
+.location {
+	display: flex;
+	justify-content: center;
+	background: var(--location-background-color);
+	gap: 10px;
+	font-weight: 700;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	color: var(--location-text-color);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+svg {
+	width: 12px;
+	height: 16px;
+	align-self: center;
+	fill: var(--location-text-color);
+}

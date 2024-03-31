@@ -1,1 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --background-color: #f6f6f6;
+  --button-color: #9356dc;
+  --badge-text-color: #008766;
+  --validation-color: #99e2d0;
+  --location-background-color: #eaeaea;
+  --location-text-color: #353535;
+  --functioning-svg-color: #7e7e7e;
+}
 
+.appBar {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  position: relative;
+}
+.appBar img {
+  width: 197px;
+  height: 36px;
+  padding: 10px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  background: var(--location-background-color);
+  gap: 10px;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  color: var(--location-text-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+svg {
+  width: 12px;
+  height: 16px;
+  align-self: center;
+  fill: var(--location-text-color);
+}
+
+.banner {
+  padding: 30px 0 50px 0;
+  background: var(--background-color);
+}
+.banner h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.banner p {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  color: var(#353535);
+  margin: 10px auto 30px auto;
+}
+.banner .btn {
+  height: 50px;
+  width: 218px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.functioning__card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.functioning__card .card__content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  background: var(--background-color);
+  border-radius: 20px;
+  width: 322px;
+  height: 72px;
+  padding-left: 30px;
+  margin-left: -12px;
+  z-index: -1;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.functioning__card .card__content h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.functioning__card .card__content span {
+  font-size: 18px;
+  color: var(--functioning-svg-color);
+}
+.functioning__card .card__content .fa-store {
+  color: var(--button-color);
+}
+.functioning__card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--button-color);
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  color: white;
+  border-radius: 100px;
+  padding: 0px 1px;
+}
+
+.restaurants {
+  background: var(--background-color);
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.restaurants .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurants a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.restaurants a .card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  position: relative;
+}
+.restaurants a img {
+  height: 165px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.restaurants .badge__new {
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  background: var(--validation-color);
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--badge-text-color);
+  margin: 0;
+}
+.restaurants .card__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+.restaurants .card__content h3,
+.restaurants .card__content p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+.restaurants .card__content span {
+  font-size: 22px;
+}
+
+footer {
+  background: var(--location-text-color);
+}
+footer img {
+  width: 139px;
+  height: 27px;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+  gap: 8px;
+}
+.footer__list a {
+  text-decoration: none;
+  color: white;
+}
+.footer__list a span {
+  color: white;
+  width: 20px;
+  margin-right: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
