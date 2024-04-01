@@ -1,0 +1,12 @@
+.menu {
+	margin-top: -64px;
+	border-radius: 32px 32px 0 0;
+	background: var(--background-color);
+	z-index: 1;
+	position: relative;
+
+	.section__title {
+		display: flex;
+		justify-content: space-between;
+	}
+}

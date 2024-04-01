@@ -1,7 +1,8 @@
 .banner {
 	padding: 30px 0 50px 0;
 	background: var(--background-color);
-	h1 {
+
+	h2 {
 		font-size: 24px;
 		font-weight: 700;
 		text-align: center;
@@ -15,25 +16,5 @@
 		font-weight: 300;
 		color: var(#353535);
 		margin: 10px auto 30px auto;
-	}
-
-	.btn {
-		height: 50px;
-		width: 218px;
-		margin: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: linear-gradient(
-			193.33deg,
-			#9356dc -11.44%,
-			#ff79da 123.93%
-		);
-		box-shadow: 0px 4px 10px 0px #00000040;
-		color: white;
-		text-decoration: none;
-		border-radius: 25px;
-		font-size: 16px;
-		font-weight: 500;
 	}
 }

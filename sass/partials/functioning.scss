@@ -1,3 +1,10 @@
+.functioning {
+	h3 {
+		font-size: 24px;
+		font-weight: 700;
+	}
+}
+
 .functioning__card {
 	display: flex;
 	flex-direction: row-reverse;
@@ -20,7 +27,7 @@
 		z-index: -1;
 		box-shadow: 0px 4px 15px 0px #00000026;
 
-		h3 {
+		h4 {
 			font-size: 16px;
 			font-weight: 500;
 		}
