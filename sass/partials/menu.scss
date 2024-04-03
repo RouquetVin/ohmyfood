@@ -1,12 +1,78 @@
 .menu {
 	margin-top: -64px;
 	border-radius: 32px 32px 0 0;
-	background: var(--background-color);
+	background: $background-color;
 	z-index: 1;
 	position: relative;
 
 	.section__title {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+
+		h2 {
+			font-weight: 400;
+			font-family: 'Shrikhand', 'cursive';
+			font-size: 28px;
+		}
+
+		i {
+			font-size: 21px;
+			margin-right: 18px;
+		}
 	}
+
+	.card__link {
+		text-decoration: none;
+		color: black;
+
+		.card {
+			@include card;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			padding: 15px;
+			margin-bottom: 12px;
+		}
+	}
+
+	.starters__section,
+	.dishes__section,
+	.desserts__section {
+		margin-bottom: 40px;
+
+		h3 {
+			font-weight: 300;
+			font-size: 16px;
+		}
+	}
+
+	.order {
+		margin-bottom: 40px;
+	}
+}
+
+.card__menu {
+	h4,
+	p {
+		margin: 0;
+	}
+
+	h4 {
+		font-weight: 500;
+		font-size: 18px;
+		margin-bottom: 3px;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 15px;
+	}
+}
+
+.card__price {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 700;
+	color: $location-text-color;
 }

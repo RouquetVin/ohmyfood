@@ -1,5 +1,5 @@
 footer {
-	background: var(--location-text-color);
+	background: $location-text-color;
 	height: 186px;
 	padding-top: 5px;
 	box-sizing: border-box;
@@ -26,7 +26,7 @@ footer {
 		text-decoration: none;
 		color: white;
 
-		span {
+		i {
 			color: white;
 			width: 20px;
 			margin-right: 8px;

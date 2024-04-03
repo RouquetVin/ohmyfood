@@ -18,7 +18,7 @@
 		justify-content: start;
 		align-items: center;
 		gap: 20px;
-		background: var(--background-color);
+		background: $background-color;
 		border-radius: 20px;
 		width: 322px;
 		height: 72px;
@@ -34,11 +34,11 @@
 
 		span {
 			font-size: 18px;
-			color: var(--functioning-svg-color);
+			color: $functioning-svg-color;
 		}
 
 		.fa-store {
-			color: var(--button-color);
+			color: $button-color;
 		}
 	}
 
@@ -46,7 +46,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: var(--button-color);
+		background: $button-color;
 		width: 24px;
 		height: 24px;
 		font-size: 14px;
