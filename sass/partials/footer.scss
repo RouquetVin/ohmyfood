@@ -1,7 +1,7 @@
-footer {
-	background: $location-text-color;
+.footer {
+	background: $text-color;
 	height: 186px;
-	padding-top: 5px;
+	padding-top: 25px;
 	box-sizing: border-box;
 
 	h4 {
@@ -31,5 +31,29 @@ footer {
 			width: 20px;
 			margin-right: 8px;
 		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.footer {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: flex-end;
+		height: 114px;
+
+		h4 {
+			margin: 0 60px 10px 60px;
+		}
+	}
+
+	.footer__list {
+		flex-direction: row;
+		margin-top: 0;
+		align-items: center;
+		margin-bottom: 14px;
+	}
+
+	.footer__list li:nth-child(2) {
+		margin-right: 30px;
 	}
 }

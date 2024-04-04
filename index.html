@@ -12,6 +12,16 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="spinner">
+            <div class="arrow"></div>
+        </div>
+        <div class="frame">
+            <div class="intern__frame">
+                <img src="./assets/images/logo/ohmyfood.png" alt="logo__ohmyfood" class="logo">
+            </div>
+        </div>
+    </div>
     <header class="appBar">
         <h1 class="appBar__logo">ohmyfood</h1>
     </header>
@@ -30,27 +40,29 @@
         <div class="container">
             <section class="functioning">
                 <h3>Fonctionnement</h3>
-                <article class="functioning__card">
-                    <div class="card__content">
-                        <h4>Choisissez un restaurant</h4>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <p>1</p>
-                </article>
-                <article class="functioning__card">
-                    <div class="card__content">
-                        <h4>Composez votre menu</h4>
-                        <i class="fa-solid fa-list-ul"></i>
-                    </div>
-                    <p>2</p>
-                </article>
-                <article class="functioning__card">
-                    <div class="card__content">
-                        <h4>Dégustez au restaurant</h4>
-                        <i class="fa-solid fa-store"></i>
-                    </div>
-                    <p>3</p>
-                </article>
+                <div class="functioning__cards">
+                    <article class="functioning__card">
+                        <div class="card__content">
+                            <h4>Choisissez un restaurant</h4>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <p>1</p>
+                    </article>
+                    <article class="functioning__card">
+                        <div class="card__content">
+                            <h4>Composez votre menu</h4>
+                            <i class="fa-solid fa-list-ul"></i>
+                        </div>
+                        <p>2</p>
+                    </article>
+                    <article class="functioning__card">
+                        <div class="card__content">
+                            <h4>Dégustez au restaurant</h4>
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <p>3</p>
+                    </article>
+                </div>
             </section>
         </div>
         <section class="restaurants" id="restaurants">
@@ -116,24 +128,22 @@
         </section>
 
     </main>
-    <footer>
-        <div class="container">
-            <h4 class="footer__logo">ohmyfood</h4>
-            <ul class="footer__list">
-                <li>
-                    <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-                </li>
-                <li>
-                    <a href="#">Mentions légales</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
+    <footer class="container footer">
+        <h4 class="footer__logo">ohmyfood</h4>
+        <ul class="footer__list">
+            <li>
+                <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="emailto:ohmyfood@gmail.com">Contact</a>
+            </li>
+        </ul>
     </footer>
 </body>
 

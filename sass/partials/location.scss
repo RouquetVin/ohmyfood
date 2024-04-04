@@ -1,10 +1,10 @@
 .location {
 	display: flex;
 	justify-content: center;
-	background: $location-background-color;
+	background: $background-secondary;
 	gap: 10px;
 	box-shadow: 0px 4px 4px 0px #00000040;
-	color: $location-text-color;
+	color: $text-color;
 	font-size: 16px;
 	font-weight: 500;
 	height: 50px;
@@ -15,7 +15,7 @@
 		width: 12px;
 		height: 16px;
 		align-self: center;
-		fill: $location-text-color;
+		fill: $text-color;
 	}
 
 	form {
@@ -23,7 +23,7 @@
 
 		input {
 			border: none;
-			background: $location-background-color;
+			background: $background-secondary;
 			font-size: 16px;
 			font-weight: 500;
 			width: 109px;

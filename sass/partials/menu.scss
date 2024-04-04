@@ -1,9 +1,10 @@
 .menu {
 	margin-top: -64px;
 	border-radius: 32px 32px 0 0;
-	background: $background-color;
+	background: $background-primary;
 	z-index: 1;
 	position: relative;
+	padding-bottom: 40px;
 
 	.section__title {
 		display: flex;
@@ -46,10 +47,6 @@
 			font-size: 16px;
 		}
 	}
-
-	.order {
-		margin-bottom: 40px;
-	}
 }
 
 .card__menu {
@@ -74,5 +71,15 @@
 	margin: 0;
 	font-size: 15px;
 	font-weight: 700;
-	color: $location-text-color;
+	color: $text-color;
+}
+
+@media (min-width: 1024px) {
+	.section__title,
+	.starters__section,
+	.dishes__section,
+	.desserts__section {
+		max-width: 634px;
+		margin: auto;
+	}
 }

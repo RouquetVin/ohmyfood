@@ -18,7 +18,7 @@
 		justify-content: start;
 		align-items: center;
 		gap: 20px;
-		background: $background-color;
+		background: $background-primary;
 		border-radius: 20px;
 		width: 322px;
 		height: 72px;
@@ -32,9 +32,9 @@
 			font-weight: 500;
 		}
 
-		span {
+		i {
 			font-size: 18px;
-			color: $functioning-svg-color;
+			color: $functioning-color;
 		}
 
 		.fa-store {
@@ -47,11 +47,34 @@
 		align-items: center;
 		justify-content: center;
 		background: $button-color;
-		width: 24px;
-		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
 		font-size: 14px;
 		color: white;
 		border-radius: 100px;
 		padding: 0px 1px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.functioning {
+		padding: 50px 180px;
+	}
+
+	.functioning__cards {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		padding-right: 50px;
+
+		.functioning__card {
+			width: 32%;
+			justify-content: flex-end;
+			margin: 0;
+
+			.card__content {
+				width: 100%;
+			}
+		}
 	}
 }
