@@ -34,10 +34,9 @@
 			border-top-left-radius: 15px;
 			border-top-right-radius: 15px;
 			object-fit: cover;
-			position: absolute;
-			top: -57px;
-			left: 0;
+			margin-top: -57px;
 			width: 100%;
+			display: block;
 		}
 	}
 }
@@ -45,33 +44,31 @@
 .restaurants {
 	.badge__new {
 		position: absolute;
-		top: 1rem;
-		right: 0.75rem;
+		height: 29px;
+		width: 80px;
+		top: 16px;
+		right: 12px;
 		background: $validation-color;
-		padding: 5px;
 		font-size: 14px;
 		font-weight: 500;
 		color: $badge-text-color;
 		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.card__content {
 		display: flex;
 		justify-content: space-between;
-		padding: 15px;
+		padding: 14.5px 20px 14.5px 14.5px;
 		align-items: center;
-		position: absolute;
-		bottom: 0;
-		width: 90.57%;
+		@include heart;
 
 		h4,
 		p {
 			margin: 0;
 			padding-bottom: 5px;
-		}
-
-		i {
-			font-size: 22px;
 		}
 	}
 }

@@ -18,103 +18,133 @@
     </header>
     <main>
         <section class="banner__menu">
-            <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="Image d'une assiette avec un plat préparé">
         </section>
         <section class="container__menu menu">
             <section class="section__title">
                 <h2>Le délice des sens</h2>
-                <i class="fa-regular fa-heart"></i>
+                <form action="" method="post">
+                    <input type="checkbox" id="heart-checkbox-4" class="heart-checkbox">
+                    <label for="heart-checkbox-4" class="heart-label" aria-label="Ajouter aux favoris">
+                        <svg class="heart-outline" viewBox="0 0 24 24">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                            </path>
+                        </svg>
+                        <svg class="heart-fill" viewBox="0 0 24 24">
+                            <defs>
+                                <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#9356dc" />
+                                    <stop offset="100%" stop-color="#ff79da" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                                fill="url(#heartGradient)">
+                            </path>
+                        </svg>
+                    </label>
+                </form>
             </section>
             <section class="starters__section">
                 <h3>ENTRÉES</h3>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Tartare de thon</h4>
-                            <p>Assaisonné au yuzu</p>
-                        </div>
-                        <p class="card__price">25€</p>
-                    </article>
-                </a>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Bouchée de homard croustillant</h4>
-                            <p>Et sa farandole de petits légumes</p>
-                        </div>
-                        <p class="card__price">35€</p>
-                    </article>
-                </a>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Poulet rôti aux herbes de Provence</h4>
-                            <p>Et sa crème de truffe</p>
-                        </div>
-                        <p class="card__price">40€</p>
-                    </article>
-                </a>
+                <hr>
+                <div class="cards__menu">
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--1">
+                            <div class="card__menu">
+                                <h4>Tartare de thon</h4>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <p class="card__price">25€</p>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--2">
+                            <div class="card__menu">
+                                <h4>Bouchée de homard croustillant</h4>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <p class="card__price">35€</p>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--3">
+                            <div class="card__menu">
+                                <h4>Poulet rôti aux herbes de Provence</h4>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <p class="card__price">40€</p>
+                        </article>
+                    </a>
+                </div>
             </section>
             <section class="dishes__section">
                 <h3>PLATS</h3>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Poulet rôti aux herbes de Provence</h4>
-                            <p>Et sa crème de truffe</p>
-                        </div>
-                        <p class="card__price">40€</p>
-                    </article>
-                </a>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Langouste rôtie</h4>
-                            <p>Et ses légumes de saison</p>
-                        </div>
-                        <p class="card__price">35€</p>
-                    </article>
-                </a>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Côte de boeuf Angus</h4>
-                            <p>Et sa purée de panais</p>
-                        </div>
-                        <p class="card__price">44€</p>
-                    </article>
-                </a>
+                <hr>
+                <div class="cards__menu">
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--4">
+                            <div class="card__menu">
+                                <h4>Poulet rôti aux herbes de Provence</h4>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <p class="card__price">40€</p>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--5">
+                            <div class="card__menu">
+                                <h4>Langouste rôtie</h4>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <p class="card__price">35€</p>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--6">
+                            <div class="card__menu">
+                                <h4>Côte de boeuf Angus</h4>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <p class="card__price">44€</p>
+                        </article>
+                    </a>
+                </div>
             </section>
             <section class="desserts__section">
                 <h3>DESSERTS</h3>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Farandole de desserts</h4>
-                            <p>Du chef</p>
-                        </div>
-                        <p class="card__price">18€</p>
-                    </article>
-                </a>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Crème brulée</h4>
-                            <p>Revisitée</p>
-                        </div>
-                        <p class="card__price">22€</p>
-                    </article>
-                </a>
-                <a href="#" class="card__link">
-                    <article class="card">
-                        <div class="card__menu">
-                            <h4>Tiramisu</h4>
-                            <p>À la noisette</p>
-                        </div>
-                        <p class="card__price">23€</p>
-                    </article>
-                </a>
+                <hr>
+                <div class="cards__menu">
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--7">
+                            <div class="card__menu">
+                                <h4>Farandole de desserts</h4>
+                                <p>Du chef</p>
+                            </div>
+                            <p class="card__price">18€</p>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--8">
+                            <div class="card__menu">
+                                <h4>Crème brulée</h4>
+                                <p>Revisitée</p>
+                            </div>
+                            <p class="card__price">22€</p>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card cards__menu__item cards__menu__item--9">
+                            <div class="card__menu">
+                                <h4>Tiramisu</h4>
+                                <p>À la noisette</p>
+                            </div>
+                            <p class="card__price">23€</p>
+                        </article>
+                    </a>
+                </div>
             </section>
             <button type="submit" class="btn order">Commander</button>
         </section>

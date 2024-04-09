@@ -1,5 +1,5 @@
 .menu {
-	margin-top: -64px;
+	margin-top: -34px;
 	border-radius: 32px 32px 0 0;
 	background: $background-primary;
 	z-index: 1;
@@ -10,6 +10,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include heart;
 
 		h2 {
 			font-weight: 400;
@@ -45,6 +46,17 @@
 		h3 {
 			font-weight: 300;
 			font-size: 16px;
+			margin-bottom: 0;
+		}
+
+		hr {
+			width: 40px;
+			height: 3px;
+			background: $validation-color;
+			margin-top: 5px;
+			margin-left: 0;
+			margin-bottom: 15px;
+			border: none;
 		}
 	}
 }
@@ -75,6 +87,13 @@
 }
 
 @media (min-width: 1024px) {
+	.menu {
+		.section__title {
+			justify-content: center;
+			gap: 30px;
+		}
+	}
+
 	.section__title,
 	.starters__section,
 	.dishes__section,
