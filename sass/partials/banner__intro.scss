@@ -1,4 +1,4 @@
-.banner {
+.banner__intro {
 	padding: 30px 0 50px 0;
 	background: $background-primary;
 
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 1024px) {
-	.banner {
+	.banner__intro {
 		padding: 50px 180px;
 
 		h2 {

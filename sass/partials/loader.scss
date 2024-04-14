@@ -11,7 +11,7 @@
 	animation: loader 0.5s ease-in-out 3s forwards;
 }
 
-.spinner {
+.loader__spinner {
 	border: 20px solid transparent;
 	border-top: 20px solid #9356dc;
 	border-right: 20px solid #9356dc;
@@ -19,11 +19,11 @@
 	width: 220px;
 	height: 220px;
 	border-radius: 100%;
-	animation: spinner 1s ease 4;
+	animation: loader__spinner 1s ease 4;
 	position: absolute;
 }
 
-.arrow {
+.spinner__arrow {
 	width: 0;
 	height: 0;
 	border-top: 20px solid transparent;
@@ -35,7 +35,7 @@
 	transform: rotate(45deg);
 }
 
-.frame {
+.loader__extern-frame {
 	width: 260px;
 	height: 260px;
 	border: 20px solid #ff79da;
@@ -45,7 +45,7 @@
 	align-items: center;
 }
 
-.intern__frame {
+.loader__intern-frame {
 	width: 180px;
 	height: 180px;
 	border: 20px solid #ff79da;
@@ -73,7 +73,7 @@
 	}
 }
 
-@keyframes spinner {
+@keyframes loader__spinner {
 	0% {
 		transform: rotate(0deg);
 	}

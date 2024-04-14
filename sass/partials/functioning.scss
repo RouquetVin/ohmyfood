@@ -31,13 +31,14 @@
 			font-weight: 500;
 		}
 
-		i {
-			font-size: 18px;
-			color: $functioning-color;
+		svg {
+			height: 18px;
+			width: 18px;
+			fill: $functioning-color;
 		}
 
-		.fa-store {
-			color: $button-color;
+		.svg__store {
+			fill: $button-color;
 		}
 	}
 

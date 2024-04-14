@@ -39,16 +39,14 @@
 			display: block;
 		}
 	}
-}
 
-.restaurants {
 	.badge__new {
 		position: absolute;
 		height: 29px;
 		width: 80px;
 		top: 16px;
 		right: 12px;
-		background: $validation-color;
+		background: $badge-and-validation-bg;
 		font-size: 14px;
 		font-weight: 500;
 		color: $badge-text-color;
@@ -63,7 +61,6 @@
 		justify-content: space-between;
 		padding: 14.5px 20px 14.5px 14.5px;
 		align-items: center;
-		@include heart;
 
 		h4,
 		p {

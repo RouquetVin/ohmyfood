@@ -4,12 +4,18 @@
 }
 
 .banner__menu img {
-	min-height: 275px;
-	max-height: 383px;
+	height: 275px;
 	width: 100%;
 	object-fit: cover;
 	object-position: center;
 	margin-bottom: -20px;
+}
+
+@media (min-width: 595px) {
+	.banner__menu img {
+		height: 383px;
+		max-height: 383px;
+	}
 }
 
 @media (min-width: 1024px) {

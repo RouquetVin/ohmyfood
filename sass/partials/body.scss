@@ -24,7 +24,6 @@ body {
 	font-weight: 500;
 	border: none;
 	cursor: pointer;
-	z-index: 1;
 	position: relative;
 
 	&:hover {
@@ -41,7 +40,6 @@ body {
 		background-color: rgba(255, 255, 255, 0.1);
 		box-shadow: 0px 8px 20px 0px #00000040;
 		opacity: 0;
-		z-index: -1;
 		transition: opacity 250ms;
 	}
 }
@@ -51,114 +49,26 @@ body {
 	box-shadow: 0px 4px 15px 0px #0000001a;
 }
 
-.heart-label {
+.add__heart {
+	position: relative;
+	border: none;
+	background: none;
+	cursor: pointer;
+	height: 28px;
+	width: 28px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 
-@mixin heart {
-	.heart-checkbox {
-		display: none;
-	}
-
-	.heart-label {
-		cursor: pointer;
-		position: relative;
-	}
-
-	.heart-outline {
-		fill: none;
-		stroke: black;
-		stroke-width: 1;
-		transition: stroke 0.3s ease-in-out;
-		width: 22px;
-		height: 21px;
-	}
-
-	.heart-fill {
-		fill: white;
-		transform-origin: center;
-		transform: scale(0);
-		transition: transform 0.3s ease-in-out;
-		position: absolute;
-		right: 0px;
-		width: 22px;
-		height: 21px;
-	}
-
-	.heart-checkbox:checked + .heart-label .heart-fill {
-		fill: url(#heartGradient);
-		transform: scale(1);
-	}
-
-	.heart-checkbox:checked + .heart-label .heart-outline {
-		stroke: url(#heartGradient);
-		stroke-width: 1;
-		transition: stroke 0.3s ease-in-out;
-	}
+.heart__gradient {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	transition: opacity 0.5s;
 }
 
-/********/
-
-.cards__menu {
-	transform-origin: top left;
-	position: relative;
-	animation: cards__menu 661ms both;
-	z-index: -10;
-	&__item {
-		animation: cards__menu__item 810ms
-			cubic-bezier(0.1, 0.9, 0.1, 1) both;
-		position: relative;
-		&--1 {
-			animation-delay: 300ms;
-		}
-		&--2 {
-			animation-delay: 600ms;
-		}
-		&--3 {
-			animation-delay: 900ms;
-		}
-		&--4 {
-			animation-delay: 1200ms;
-		}
-		&--5 {
-			animation-delay: 1500ms;
-		}
-		&--6 {
-			animation-delay: 1800ms;
-		}
-		&--7 {
-			animation-delay: 2100ms;
-		}
-		&--8 {
-			animation-delay: 2400ms;
-		}
-		&--9 {
-			animation-delay: 2700ms;
-		}
-		&--10 {
-			animation-delay: 3000ms;
-		}
-	}
-}
-
-@keyframes cards__menu {
-	0% {
-		transform: scale(0, 0.07);
-	}
-	33% {
-		transform: scale(1, 0.07);
-		animation-timing-function: cubic-bezier(
-			0.73,
-			0.01,
-			0.2,
-			0.99
-		);
-	}
-}
-
-@keyframes cards__menu__item {
-	0% {
-		transform: translateX(-300%);
-	}
+.add__heart:hover .heart__gradient {
+	opacity: 1;
 }
