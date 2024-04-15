@@ -6,6 +6,12 @@
 	z-index: 2;
 	height: 63px;
 
+	.logo__link {
+		text-decoration: none;
+		color: black;
+		align-self: center;
+	}
+
 	svg {
 		align-items: center;
 		position: absolute;
