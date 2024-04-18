@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
+
     <header class="appBar">
         <a href="../index.html" title="Accueil" class="arrow__link">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -21,15 +24,29 @@
         </a>
         <h1 class="appBar__logo">ohmyfood</h1>
     </header>
+
+    <!-- MAIN -->
+
     <main>
+
+        <!-- BANNER -->
+
         <div class="banner__menu">
             <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="Image d'une assiette avec un plat préparé">
         </div>
+
+        <!-- MENU -->
+
         <div class="container__menu menu">
+
+            <!-- SECTION TITLE -->
+
             <section class="section__title">
+
                 <h2>Le délice des sens</h2>
-                <div class="add__heart" title="Ajouter un coeur">
+
+                <button type="button" class="add__heart" title="Ajouter un coeur">
                     <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
                         <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
                             d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -45,185 +62,210 @@
                             stroke-width="1"
                             d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                     </svg>
-                </div>
+                </button>
+
             </section>
+
+            <!-- STARTERS SECTION -->
+
             <section class="starters__section">
+
                 <h3>ENTRÉES</h3>
+
                 <hr>
+
                 <div class="cards__menu">
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--1">
-                            <div class="card__menu">
-                                <h4>Tartare de thon</h4>
-                                <p>Assaisonné au yuzu</p>
+
+                    <article class="card cards__menu-item cards__menu-item--1">
+                        <div class="card__menu">
+                            <h4>Tartare de thon</h4>
+                            <p>Assaisonné au yuzu</p>
+                        </div>
+                        <p class="card__price">25€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                            <p class="card__price">25€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
+                        </div>
+                    </article>
+
+                    <article class="card cards__menu-item cards__menu-item--2">
+                        <div class="card__menu">
+                            <h4>Bouchée de homard croustillant</h4>
+                            <p>Et sa farandole de petits légumes</p>
+                        </div>
+                        <p class="card__price">35€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                        </article>
-                    </a>
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--2">
-                            <div class="card__menu">
-                                <h4>Bouchée de homard croustillant</h4>
-                                <p>Et sa farandole de petits légumes</p>
+                        </div>
+                    </article>
+
+                    <article class="card cards__menu-item cards__menu-item--3">
+                        <div class="card__menu">
+                            <h4>Poulet rôti aux herbes de Provence</h4>
+                            <p>Et sa crème de truffe</p>
+                        </div>
+                        <p class="card__price">40€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                            <p class="card__price">35€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--3">
-                            <div class="card__menu">
-                                <h4>Poulet rôti aux herbes de Provence</h4>
-                                <p>Et sa crème de truffe</p>
-                            </div>
-                            <p class="card__price">40€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
+                        </div>
+                    </article>
+
                 </div>
+
             </section>
+
+            <!-- DISHES SECTION -->
+
             <section class="dishes__section">
+
                 <h3>PLATS</h3>
+
                 <hr>
+
                 <div class="cards__menu">
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--4">
-                            <div class="card__menu">
-                                <h4>Poulet rôti aux herbes de Provence</h4>
-                                <p>Et sa crème de truffe</p>
+
+                    <article class="card cards__menu-item cards__menu-item--4">
+                        <div class="card__menu">
+                            <h4>Poulet rôti aux herbes de Provence</h4>
+                            <p>Et sa crème de truffe</p>
+                        </div>
+                        <p class="card__price">40€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                            <p class="card__price">40€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
+                        </div>
+                    </article>
+
+                    <article class="card cards__menu-item cards__menu-item--5">
+                        <div class="card__menu">
+                            <h4>Langouste rôtie</h4>
+                            <p>Et ses légumes de saison</p>
+                        </div>
+                        <p class="card__price">35€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                        </article>
-                    </a>
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--5">
-                            <div class="card__menu">
-                                <h4>Langouste rôtie</h4>
-                                <p>Et ses légumes de saison</p>
+                        </div>
+                    </article>
+
+                    <article class="card cards__menu-item cards__menu-item--6">
+                        <div class="card__menu">
+                            <h4>Côte de boeuf Angus</h4>
+                            <p>Et sa purée de panais</p>
+                        </div>
+                        <p class="card__price">44€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                            <p class="card__price">35€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--6">
-                            <div class="card__menu">
-                                <h4>Côte de boeuf Angus</h4>
-                                <p>Et sa purée de panais</p>
-                            </div>
-                            <p class="card__price">44€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
+                        </div>
+                    </article>
+
                 </div>
+
             </section>
+
+            <!-- DESSERTS SECTION -->
+
             <section class="desserts__section">
+
                 <h3>DESSERTS</h3>
+
                 <hr>
+
                 <div class="cards__menu">
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--7">
-                            <div class="card__menu">
-                                <h4>Farandole de desserts</h4>
-                                <p>Du chef</p>
+
+                    <article class="card cards__menu-item cards__menu-item--7">
+                        <div class="card__menu">
+                            <h4>Farandole de desserts</h4>
+                            <p>Du chef</p>
+                        </div>
+                        <p class="card__price">18€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                            <p class="card__price">18€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
+                        </div>
+                    </article>
+
+                    <article class="card cards__menu-item cards__menu-item--8">
+                        <div class="card__menu">
+                            <h4>Crème brulée</h4>
+                            <p>Revisitée</p>
+                        </div>
+                        <p class="card__price">22€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                        </article>
-                    </a>
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--8">
-                            <div class="card__menu">
-                                <h4>Crème brulée</h4>
-                                <p>Revisitée</p>
+                        </div>
+                    </article>
+
+                    <article class="card cards__menu-item cards__menu-item--9">
+                        <div class="card__menu">
+                            <h4>Tiramisu</h4>
+                            <p>À la noisette</p>
+                        </div>
+                        <p class="card__price">23€</p>
+                        <div class="card__validation">
+                            <div class="icon__validation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
                             </div>
-                            <p class="card__price">22€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="#" class="card__link">
-                        <article class="card cards__menu-item cards__menu-item--9">
-                            <div class="card__menu">
-                                <h4>Tiramisu</h4>
-                                <p>À la noisette</p>
-                            </div>
-                            <p class="card__price">23€</p>
-                            <div class="card__validation">
-                                <div class="icon__validation">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
+                        </div>
+                    </article>
+
                 </div>
+
             </section>
+
             <button type="submit" class="btn order">Commander</button>
+
         </div>
+
     </main>
+
+    <!-- FOOTER -->
+
     <footer class="container footer">
+
         <h4 class="footer__logo">ohmyfood</h4>
+
         <ul class="footer__list">
+
             <li>
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -233,6 +275,7 @@
                     Proposer un restaurant
                 </a>
             </li>
+
             <li>
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -242,14 +285,19 @@
                     Devenir partenaire
                 </a>
             </li>
+
             <li>
                 <a href="#">Mentions légales</a>
             </li>
+
             <li>
                 <a href="mailto:ohmyfood@gmail.com">Contact</a>
             </li>
+
         </ul>
+
     </footer>
+
 </body>
 
 </html>

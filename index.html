@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+    <!-- LOADER -->
+
     <div class="loader">
         <div class="loader__spinner">
             <div class="spinner__arrow"></div>
@@ -22,12 +25,21 @@
             </div>
         </div>
     </div>
+
+    <!-- HEADER -->
+
     <header class="appBar">
         <a href="./index.html" class="logo__link">
             <h1 class="appBar__logo">ohmyfood</h1>
         </a>
     </header>
+
+    <!-- MAIN -->
+
     <main>
+
+        <!-- LOCATION -->
+
         <div class="location">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <path
@@ -37,14 +49,22 @@
                 <input type="text" name="search__input" value="Paris, Belleville" title="Chercher">
             </form>
         </div>
+
+        <!-- BANNER -->
+
         <section class="banner__intro">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <a href="#restaurants" class="btn">Explorer nos restaurants</a>
         </section>
+
+        <!-- FUNCTIONING -->
+
         <section class="container functioning">
             <h3>Fonctionnement</h3>
+
             <div class="functioning__cards">
+
                 <article class="functioning__card">
                     <div class="card__content">
                         <h4>Choisissez un restaurant</h4>
@@ -55,6 +75,7 @@
                     </div>
                     <p>1</p>
                 </article>
+
                 <article class="functioning__card">
                     <div class="card__content">
                         <h4>Composez votre menu</h4>
@@ -65,6 +86,7 @@
                     </div>
                     <p>2</p>
                 </article>
+
                 <article class="functioning__card">
                     <div class="card__content">
                         <h4>Dégustez au restaurant</h4>
@@ -75,135 +97,157 @@
                     </div>
                     <p>3</p>
                 </article>
+
             </div>
+
         </section>
+
+        <!-- RESTAURANTS -->
+
         <section class="container restaurants" id="restaurants">
             <h3>Restaurants</h3>
+
             <div class="cards">
-                <a href="./restaurants/la-palette-du-gout.html" title="La palette du goût">
-                    <article class="card">
-                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                            alt="Image d'une assiette avec un plat préparé">
-                        <p class="badge__new">Nouveau</p>
-                        <div class="card__content">
-                            <div class="card__txt">
+
+                <article class="card">
+                    <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="Image d'une assiette avec un plat préparé">
+                    <p class="badge__new">Nouveau</p>
+                    <div class="card__content">
+                        <div class="card__txt">
+                            <a href="./restaurants/la-palette-du-gout.html" title="La palette du goût">
                                 <h4>La palette du goût</h4>
                                 <p>Ménimontant</p>
-                            </div>
-                            <div class="add__heart" title="Ajouter un coeur">
-                                <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
-                                    <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
-                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                                <svg class="heart__gradient" viewBox="0 0 24 24" width="28" height="28">
-                                    <defs>
-                                        <linearGradient id="heartGradientHover1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stop-color="#9356dc" />
-                                            <stop offset="100%" stop-color="#ff79da" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path class="heart__shape" fill="url(#heartGradientHover1)"
-                                        stroke="url(#heartGradientHover1)" stroke-width="1"
-                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </div>
+                                <span class="invisible__link"></span>
+                            </a>
                         </div>
-                    </article>
-                </a>
-                <a href="./restaurants/la-note-enchantee.html">
-                    <article class="card">
-                        <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                            alt="Image d'une assiette avec un plat préparé">
-                        <p class="badge__new">Nouveau</p>
-                        <div class="card__content">
-                            <div class="card__txt">
+                        <button type="button" class="add__heart" title="Ajouter un coeur">
+                            <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
+                                <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <svg class="heart__gradient" viewBox="0 0 24 24" width="28" height="28">
+                                <defs>
+                                    <linearGradient id="heartGradientHover1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#9356dc" />
+                                        <stop offset="100%" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="heart__shape" fill="url(#heartGradientHover1)"
+                                    stroke="url(#heartGradientHover1)" stroke-width="1"
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                        alt="Image d'une assiette avec un plat préparé">
+                    <p class="badge__new">Nouveau</p>
+                    <div class="card__content">
+                        <div class="card__txt">
+                            <a href="./restaurants/la-note-enchantee.html">
                                 <h4>La note enchantée</h4>
                                 <p>Charonne</p>
-                            </div>
-                            <div class="add__heart" title="Ajouter un coeur">
-                                <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
-                                    <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
-                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                                <svg class="heart__gradient" viewBox="0 0 24 24" width="28" height="28">
-                                    <defs>
-                                        <linearGradient id="heartGradientHover2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stop-color="#9356dc" />
-                                            <stop offset="100%" stop-color="#ff79da" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path class="heart__shape" fill="url(#heartGradientHover2)"
-                                        stroke="url(#heartGradientHover2)" stroke-width="1"
-                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </div>
+                                <span class="invisible__link"></span>
+                            </a>
                         </div>
-                    </article>
-                </a>
-                <a href="./restaurants/a-la-francaise.html">
-                    <article class="card">
-                        <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                            alt="Image d'une assiette avec un plat préparé">
-                        <div class="card__content">
-                            <div class="card__txt">
+                        <button type="button" class="add__heart" title="Ajouter un coeur">
+                            <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
+                                <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <svg class="heart__gradient" viewBox="0 0 24 24" width="28" height="28">
+                                <defs>
+                                    <linearGradient id="heartGradientHover2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#9356dc" />
+                                        <stop offset="100%" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="heart__shape" fill="url(#heartGradientHover2)"
+                                    stroke="url(#heartGradientHover2)" stroke-width="1"
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                        alt="Image d'une assiette avec un plat préparé">
+                    <div class="card__content">
+                        <div class="card__txt">
+                            <a href="./restaurants/a-la-francaise.html">
                                 <h4>À la française</h4>
                                 <p>Cité rouge</p>
-                            </div>
-                            <div class="add__heart" title="Ajouter un coeur">
-                                <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
-                                    <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
-                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                                <svg class="heart__gradient" viewBox="0 0 24 24" width="28" height="28">
-                                    <defs>
-                                        <linearGradient id="heartGradientHover3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stop-color="#9356dc" />
-                                            <stop offset="100%" stop-color="#ff79da" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path class="heart__shape" fill="url(#heartGradientHover3)"
-                                        stroke="url(#heartGradientHover3)" stroke-width="1"
-                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </div>
+                                <span class="invisible__link"></span>
+                            </a>
                         </div>
-                    </article>
-                </a>
-                <a href="./restaurants/le-delice-des-sens.html">
-                    <article class="card">
-                        <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                            alt="Image d'une assiette avec un plat préparé">
-                        <div class="card__content">
-                            <div class="card__txt">
+                        <button type="button" class="add__heart" title="Ajouter un coeur">
+                            <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
+                                <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <svg class="heart__gradient" viewBox="0 0 24 24" width="28" height="28">
+                                <defs>
+                                    <linearGradient id="heartGradientHover3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#9356dc" />
+                                        <stop offset="100%" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="heart__shape" fill="url(#heartGradientHover3)"
+                                    stroke="url(#heartGradientHover3)" stroke-width="1"
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        alt="Image d'une assiette avec un plat préparé">
+                    <div class="card__content">
+                        <div class="card__txt">
+                            <a href="./restaurants/le-delice-des-sens.html">
                                 <h4>Le délice des sens</h4>
                                 <p>Folie-Méricourt</p>
-                            </div>
-                            <div class="add__heart" title="Ajouter un coeur">
-                                <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
-                                    <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
-                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                                <svg class="heart__gradient" viewBox="0 0 24 24" width="28" height="28">
-                                    <defs>
-                                        <linearGradient id="heartGradientHover4" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stop-color="#9356dc" />
-                                            <stop offset="100%" stop-color="#ff79da" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path class="heart__shape" fill="url(#heartGradientHover4)"
-                                        stroke="url(#heartGradientHover4)" stroke-width="1"
-                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </div>
+                                <span class="invisible__link"></span>
+                            </a>
                         </div>
-                    </article>
-                </a>
+                        <button type="button" class="add__heart" title="Ajouter un coeur">
+                            <svg class="heart__outline" viewBox="0 0 24 24" width="28" height="28">
+                                <path class="heart__shape" fill="white" stroke="black" stroke-width="1"
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <svg class="heart__gradient" viewBox="0 0 24 24" width="28" height="28">
+                                <defs>
+                                    <linearGradient id="heartGradientHover4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#9356dc" />
+                                        <stop offset="100%" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="heart__shape" fill="url(#heartGradientHover4)"
+                                    stroke="url(#heartGradientHover4)" stroke-width="1"
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
             </div>
+
         </section>
+
     </main>
+
+    <!-- FOOTER -->
+
     <footer class="container footer">
+
         <h4 class="footer__logo">ohmyfood</h4>
         <ul class="footer__list">
+
             <li>
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -213,6 +257,7 @@
                     Proposer un restaurant
                 </a>
             </li>
+
             <li>
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -222,14 +267,19 @@
                     Devenir partenaire
                 </a>
             </li>
+
             <li>
                 <a href="#">Mentions légales</a>
             </li>
+
             <li>
                 <a href="mailto:ohmyfood@gmail.com">Contact</a>
             </li>
+
         </ul>
+
     </footer>
+
 </body>
 
 </html>

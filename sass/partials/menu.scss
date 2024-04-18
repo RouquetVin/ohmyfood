@@ -58,23 +58,18 @@
 		}
 	}
 
-	.card__link {
-		text-decoration: none;
-		color: black;
+	.card {
+		@include card;
+		display: flex;
+		align-items: flex-end;
+		padding: 15px;
+		margin-bottom: 12px;
+		overflow: hidden;
 		cursor: pointer;
+	}
 
-		.card {
-			@include card;
-			display: flex;
-			align-items: flex-end;
-			padding: 15px;
-			margin-bottom: 12px;
-			overflow: hidden;
-		}
-
-		.card:hover .card__validation {
-			margin-right: -16px;
-		}
+	.card:hover .card__validation {
+		margin-right: -16px;
 	}
 }
 

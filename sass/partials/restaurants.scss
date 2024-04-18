@@ -16,28 +16,32 @@
 		justify-content: space-between;
 	}
 
-	a {
-		display: inline-block;
+	.card {
+		@include card;
+		position: relative;
+		height: 251px;
 		width: 100%;
+		overflow: hidden;
+	}
+
+	a {
 		text-decoration: none;
 		color: black;
+	}
 
-		.card {
-			@include card;
-			position: relative;
-			height: 251px;
-			overflow: hidden;
-		}
+	.invisible__link {
+		position: absolute;
+		inset: 0;
+	}
 
-		img {
-			height: 231px;
-			border-top-left-radius: 15px;
-			border-top-right-radius: 15px;
-			object-fit: cover;
-			margin-top: -57px;
-			width: 100%;
-			display: block;
-		}
+	img {
+		height: 231px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		object-fit: cover;
+		margin-top: -57px;
+		width: 100%;
+		display: block;
 	}
 
 	.badge__new {
@@ -81,7 +85,7 @@
 			gap: 50px;
 		}
 
-		a {
+		.card {
 			width: 45.2%;
 		}
 	}
