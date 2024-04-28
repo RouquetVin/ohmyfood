@@ -24,22 +24,22 @@
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
 	transition: transform 1s ease-in-out;
-	fill: url(#heartGradientHover);
-	stroke: url(#heartGradientHover);
+	fill: url(#heart__gradient);
+	stroke: url(#heart__gradient);
 }
 
-.gradientCheckbox {
+.gradient__checkbox {
 	position: absolute;
 	visibility: hidden;
 }
 
-#gradientCheckbox {
+#gradient__checkbox {
 	@for $i from 1 through 4 {
 		&#{$i}:checked + .card .add__heart .heart__gradient {
 			transform: translate(-50%, -50%) scale(1);
 		}
 
-		&#{$i + 3}:checked + .add__heart .heart__gradient {
+		&#{$i + 4}:checked + .add__heart .heart__gradient {
 			transform: translate(-50%, -50%) scale(1);
 		}
 	}
