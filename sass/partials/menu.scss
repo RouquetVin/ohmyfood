@@ -1,7 +1,7 @@
 .menu {
 	margin-top: -34px;
 	border-radius: 32px 32px 0 0;
-	background: $background-primary;
+	background: $primary-bg;
 	z-index: 1;
 	position: relative;
 	padding-bottom: 40px;
@@ -33,7 +33,7 @@
 		hr {
 			width: 40px;
 			height: 3px;
-			background: $badge-and-validation-bg;
+			background: $tertiary-clr;
 			margin-top: 5px;
 			margin-left: 0;
 			margin-bottom: 15px;
@@ -111,13 +111,13 @@
 	margin: 0;
 	font-size: 15px;
 	font-weight: 700;
-	color: $text-color;
+	color: $txt-clr;
 	padding-left: 8px;
 	margin-right: 32px;
 }
 
 .card__validation {
-	background: $badge-and-validation-bg;
+	background: $tertiary-clr;
 	margin: -15px -80px -15px -15px;
 	width: 64px;
 	height: 73px;
@@ -132,7 +132,7 @@
 .icon__validation {
 	height: 22px;
 	width: 22px;
-	background: white;
+	background: $secondary-bg;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -140,7 +140,7 @@
 
 	svg {
 		font-weight: 900;
-		fill: $badge-and-validation-bg;
+		fill: $tertiary-clr;
 		height: 16px;
 		width: 16px;
 	}

@@ -18,7 +18,7 @@
 		justify-content: start;
 		align-items: center;
 		gap: 20px;
-		background: $background-primary;
+		background: $primary-bg;
 		border-radius: 20px;
 		width: 100%;
 		height: 72px;
@@ -34,11 +34,11 @@
 		svg {
 			height: 18px;
 			width: 18px;
-			fill: $functioning-color;
+			fill: $functioning-svg-clr;
 		}
 
 		.svg__store {
-			fill: $button-color;
+			fill: $primary-clr;
 		}
 	}
 
@@ -46,7 +46,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: $button-color;
+		background: $primary-clr;
 		min-width: 24px;
 		min-height: 24px;
 		font-size: 14px;

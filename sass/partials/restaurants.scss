@@ -1,5 +1,5 @@
 .restaurants {
-	background: $background-primary;
+	background: $primary-bg;
 	margin-top: 30px;
 	padding-top: 10px;
 	padding-bottom: 50px;
@@ -50,10 +50,10 @@
 		width: 80px;
 		top: 16px;
 		right: 12px;
-		background: $badge-and-validation-bg;
+		background: $tertiary-clr;
 		font-size: 14px;
 		font-weight: 500;
-		color: $badge-text-color;
+		color: $badge-txt-clr;
 		margin: 0;
 		display: flex;
 		justify-content: center;
